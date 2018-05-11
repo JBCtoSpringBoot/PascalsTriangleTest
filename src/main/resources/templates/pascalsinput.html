@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pascals Input</title>
+</head>
+<body>
+    <form action="#" th:action="@{/postpascals}" th:object="${pnumber}" method="post">
+        <div>
+            <label> Enter a size greater than 0: </label>
+            <input type="text" th:field="*{size}" name="mypascals">
+            <span th:if="${#fields.hasErrors('size')}" th:errors="*{size}" ></span>
+
+        </div>
+        <div>
+            <button>Print Pascal's Triangle</button>
+        </div>
+
+    </form>
+</body>
+</html>

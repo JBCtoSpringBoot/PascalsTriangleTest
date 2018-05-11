@@ -1,6 +1,7 @@
 package com.rekik.pascalstrianglejbc2018;
 
-public class Pascalstriangle {
+/*A console app for testing purposes*/
+public class PascalstriangleConsole {
 
     public static void main(String[] args) {
         int row = 10;
